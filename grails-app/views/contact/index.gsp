@@ -21,7 +21,7 @@
         <td class="text-center">${contact.number}</td>
 
         <td><center><a href = "" class="btn btn-info"><span class="glyphicon glyphicon-pencil"></span>&nbsp;&nbsp;Edit&nbsp;&nbsp;</a>
-            <a href = "" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Delete</a></center></td>
+            <g:link controller="contact" action="delete" params="${[id: contact.id]}" href = "" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Delete</g:link></center></td>
 
     </tr>
 </g:each>

@@ -16,4 +16,11 @@ class ContactService {
         println(contact.toString())
         contact.save(flush: true, failOnError:true)
     }
+
+    def delete(GrailsParameterMap params) {
+        Contact contact = Contact.get(params.long('id'))
+        contact.delete()
+    }
+
+
 }
