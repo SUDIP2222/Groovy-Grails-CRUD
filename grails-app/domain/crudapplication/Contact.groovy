@@ -12,6 +12,10 @@ class Contact {
     Date lastUpdated
 
     static constraints = {
-        autoTimestamp true
+
+    }
+
+    static mapping = {
+        //version(false)
     }
 }

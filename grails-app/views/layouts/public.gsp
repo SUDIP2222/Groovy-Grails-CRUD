@@ -18,8 +18,8 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-left">
-                <li><a href = "/customers"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-                <li><a href = "/customers/create"><span class="glyphicon glyphicon-save"></span> Create</a></li>
+                <li><g:link controller="contact" action="index"><span class="glyphicon glyphicon-home"></span> Home</g:link></li>
+                <li><g:link controller="contact" action="create"><span class="glyphicon glyphicon-save"></span> Create</g:link></li>
             </ul>
             <div class="col-sm-3 col-md-3 pull-right">
                 <form method="get" action="http://localhost:3000/customers/name/search"  class="navbar-form">
