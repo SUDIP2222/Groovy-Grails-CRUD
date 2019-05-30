@@ -22,5 +22,12 @@ class ContactService {
         contact.delete()
     }
 
+    def get(GrailsParameterMap params) {
+        Contact contact = Contact.get(params.long('id'))
+        return contact
+    }
+
+
+
 
 }

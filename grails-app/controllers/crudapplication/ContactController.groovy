@@ -20,7 +20,9 @@ class ContactController {
     }
 
     def edit() {
-
+        println(params.long('id'))
+        Contact contact = contactService.get(params)
+        [contact: contact]
     }
 
     def delete() {
