@@ -14,7 +14,7 @@
 <div class="navbar navbar-default navbar-static-top" role="navigation">
     <div class="container" >
         <div class="navbar-header" >
-            <a class="navbar-brand fn" href="/customers"><span class="glyphicon glyphicon-list-alt"></span> Customer Info </a>
+            <g:link controller="contact" action="index" class="navbar-brand fn"><span class="glyphicon glyphicon-list-alt"></span> Customer Info </g:link>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-left">

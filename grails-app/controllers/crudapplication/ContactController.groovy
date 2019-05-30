@@ -19,6 +19,10 @@ class ContactController {
         redirect  (controller:'contact' , action:'index' )
     }
 
+    def edit() {
+
+    }
+
     def delete() {
         println(params.long('id'))
         contactService.delete(params)
