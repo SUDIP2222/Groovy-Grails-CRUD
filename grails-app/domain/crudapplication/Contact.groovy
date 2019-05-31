@@ -18,4 +18,18 @@ class Contact {
     static mapping = {
         //version(false)
     }
+
+
+    @java.lang.Override
+    public java.lang.String toString() {
+        return "Contact{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", number='" + number + '\'' +
+                ", address='" + address + '\'' +
+                ", dateCreated=" + dateCreated +
+                ", lastUpdated=" + lastUpdated +
+                '}'
+    }
 }

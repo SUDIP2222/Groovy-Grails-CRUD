@@ -32,7 +32,7 @@
 
                 </div>
                 <g:hiddenField name="id" value="${contact.id}" />
-                <g:actionSubmit type="submit" name="submit" value="Edit" class="btn btn-primary"/>
+                <g:actionSubmit type="submit" name="submit" value="update" class="btn btn-primary"/>
 
             </g:form>
 
