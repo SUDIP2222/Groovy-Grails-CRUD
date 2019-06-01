@@ -22,14 +22,14 @@
                 <li><g:link controller="contact" action="create"><span class="glyphicon glyphicon-save"></span> Create</g:link></li>
             </ul>
             <div class="col-sm-3 col-md-3 pull-right">
-                <form method="get" action="http://localhost:3000/customers/name/search"  class="navbar-form">
+                <g:form  action="search" method="GET" class="navbar-form">
                     <div class="input-group">
-                        <input type="text" name="search" placeholder="Search By Name" class="form-control">
+                        <g:textField type="search" name="search" placeholder="Search By Name" class="form-control"/>
                         <div class="input-group-btn">
-                            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                        <g:actionSubmit type="submit" name="submit" value="search" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></g:actionSubmit>
                         </div>
                     </div>
-                </form>
+                </g:form>
             </div>
         </div>
     </div>

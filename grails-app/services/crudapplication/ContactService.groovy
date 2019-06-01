@@ -34,7 +34,11 @@ class ContactService {
         return contact
     }
 
-
-
+    def search(GrailsParameterMap params) {
+        println(params.search)
+        List<Contact> contactList = Contact.findAllByNameLike('%'+params.search+'%')
+        println(contactList)
+        return contactList
+    }
 
 }

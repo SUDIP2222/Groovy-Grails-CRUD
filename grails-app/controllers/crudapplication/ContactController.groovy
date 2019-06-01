@@ -36,4 +36,10 @@ class ContactController {
         redirect  (controller:'contact' , action:'index' )
 
     }
+
+    def search() {
+        //params.search
+        def contactList = contactService.search(params)
+        render view:'index.gsp', model:[contacts:contactList]
+    }
 }
